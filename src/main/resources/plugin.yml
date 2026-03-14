@@ -1,0 +1,15 @@
+name: FunTimeCustom
+version: 1.0
+main: me.funtime.funtimecustom.FunTimeCustom
+api-version: 1.16
+depend: [Vault, PlaceholderAPI]
+softdepend: [DecentHolograms]
+commands:
+  funtime:
+    description: Главная команда плагина FunTimeCustom
+    usage: /funtime <reload|beacon|chest>
+    aliases: [ft]
+permissions:
+  funtime.admin:
+    description: Доступ ко всем командам
+    default: op

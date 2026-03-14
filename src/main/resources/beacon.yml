@@ -1,0 +1,34 @@
+# Настройки маяка-убийцы
+
+# Сколько сундуков вокруг маяка
+chests-count: 4
+
+# Радиус, на котором ставятся сундуки (блоков от центра)
+chest-radius: 3
+
+# Этапы открытия сундуков (в секундах от начала ивента)
+chest-phases:
+  0: true   # сундук 1 открыт сразу
+  60: true  # сундук 2 через 1 минуту
+  120: true # сундук 3 через 2 минуты
+  180: true # сундук 4 через 3 минуты
+
+# Лут в сундуках маяка (для всех сундуков)
+loot:
+  items:
+    - material: DIAMOND
+      name: "&bАлмаз"
+      amount: 5-10
+      chance: 70
+    - material: NETHERITE_INGOT
+      name: "&8Незеритовый слиток"
+      amount: 1-3
+      chance: 30
+    - material: ENCHANTED_GOLDEN_APPLE
+      name: "&eЗачарованное яблоко"
+      amount: 1
+      chance: 20
+    - material: EXPERIENCE_BOTTLE
+      name: "&aОпыт"
+      amount: 10-20
+      chance: 100

@@ -1,0 +1,137 @@
+# Типы мистических сундуков
+types:
+  Обычный:
+    spawn-weight: 10.0   # вес для случайного спавна
+    gui-title: "&8Обычный сундук"
+    mask-item:
+      material: BLACK_STAINED_GLASS_PANE
+      name: "&8?"
+    slots: 27            # размер сундука (кратно 9)
+    open-phases:
+      0: 3               # на 0 секунде открывается 3 слота
+      10: 5              # через 10 секунд ещё 5 слотов
+      20: 7
+      30: 12
+    loot:
+      items:
+        - material: DIAMOND
+          name: "&bАлмаз"
+          amount: 1-3
+          chance: 50
+        - material: GOLD_INGOT
+          name: "&6Золотой слиток"
+          amount: 2-5
+          chance: 70
+        - material: IRON_INGOT
+          name: "&7Железный слиток"
+          amount: 3-8
+          chance: 100
+
+  Солидный:
+    spawn-weight: 8.0
+    gui-title: "&7Солидный сундук"
+    mask-item:
+      material: GRAY_STAINED_GLASS_PANE
+      name: "&7?"
+    slots: 27
+    open-phases:
+      0: 4
+      15: 6
+      30: 8
+    loot:
+      items:
+        - material: DIAMOND
+          name: "&bАлмаз"
+          amount: 2-4
+          chance: 60
+        - material: EMERALD
+          name: "&aИзумруд"
+          amount: 3-6
+          chance: 80
+        - material: GOLD_INGOT
+          name: "&6Золотой слиток"
+          amount: 5-10
+          chance: 90
+
+  Богатый:
+    spawn-weight: 5.0
+    gui-title: "&6Богатый сундук"
+    mask-item:
+      material: YELLOW_STAINED_GLASS_PANE
+      name: "&6?"
+    slots: 27
+    open-phases:
+      0: 5
+      10: 7
+      20: 10
+      30: 5
+    loot:
+      items:
+        - material: DIAMOND
+          name: "&bАлмаз"
+          amount: 3-6
+          chance: 80
+        - material: EMERALD
+          name: "&aИзумруд"
+          amount: 5-10
+          chance: 90
+        - material: NETHERITE_INGOT
+          name: "&8Незеритовый слиток"
+          amount: 1-2
+          chance: 30
+
+  Элитный:
+    spawn-weight: 3.0
+    gui-title: "&5Элитный сундук"
+    mask-item:
+      material: PURPLE_STAINED_GLASS_PANE
+      name: "&5?"
+    slots: 27
+    open-phases:
+      0: 6
+      15: 8
+      30: 13
+    loot:
+      items:
+        - material: DIAMOND
+          name: "&bАлмаз"
+          amount: 5-10
+          chance: 100
+        - material: NETHERITE_INGOT
+          name: "&8Незеритовый слиток"
+          amount: 2-4
+          chance: 50
+        - material: ENCHANTED_GOLDEN_APPLE
+          name: "&eЗачарованное яблоко"
+          amount: 1-2
+          chance: 25
+
+  Легендарный:
+    spawn-weight: 1.0
+    gui-title: "&d&lЛегендарный сундук"
+    mask-item:
+      material: MAGENTA_STAINED_GLASS_PANE
+      name: "&d?"
+    slots: 27
+    open-phases:
+      0: 8
+      20: 10
+      40: 9
+    loot:
+      items:
+        - material: NETHERITE_INGOT
+          name: "&8Незеритовый слиток"
+          amount: 3-6
+          chance: 100
+        - material: ENCHANTED_GOLDEN_APPLE
+          name: "&eЗачарованное яблоко"
+          amount: 2-4
+          chance: 50
+        - material: DRAGON_EGG
+          name: "&5Яйцо дракона"
+          amount: 1
+          chance: 5
+        - material: NETHERITE_SWORD
+          name: "&8Незеритовый меч"
+          amount: 1
+          chance: 15
