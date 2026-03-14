@@ -13,7 +13,7 @@ jobs:
       - name: Build with Maven
         run: mvn clean package
       - name: Upload artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: FunTimeCustom
           path: target/funtimecustom-1.0.jar
